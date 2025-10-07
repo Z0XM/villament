@@ -69,80 +69,142 @@ export default function Home() {
       </div>
       
       {/* Hero Section */}
-      <section className="flex-1 flex items-center justify-center px-6 py-12 relative">
-        {/* Decorative elements */}
+      <section className="flex-1 flex items-center justify-center px-6 py-12 relative min-h-screen">
+        {/* Enhanced Decorative elements */}
         <div className="absolute top-0 left-0 w-64 h-64 bg-gold/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 right-1/4 w-48 h-48 bg-gold/3 rounded-full blur-2xl" />
+        <div className="absolute bottom-1/3 left-1/4 w-56 h-56 bg-gold/4 rounded-full blur-3xl" />
+        
+        {/* Decorative corner accents */}
+        <div className="absolute top-8 left-24 w-16 h-16 border-t-2 border-l-2 border-gold/20" />
+        <div className="absolute top-8 right-24 w-16 h-16 border-t-2 border-r-2 border-gold/20" />
+        <div className="absolute bottom-8 left-24 w-16 h-16 border-b-2 border-l-2 border-gold/20" />
+        <div className="absolute bottom-8 right-24 w-16 h-16 border-b-2 border-r-2 border-gold/20" />
+        
+        {/* Subtle geometric shapes in background */}
+        <div className="absolute top-1/3 left-1/3 w-32 h-32 border border-gold/5 rotate-45" />
+        <div className="absolute bottom-1/4 right-1/3 w-24 h-24 border border-gold/5 -rotate-12" />
         
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          {/* Logo/Brand */}
-          <div className="animate-fade-in mb-8">
-            <div className="inline-block">
+          {/* Logo/Brand with enhanced styling */}
+          <div className="animate-fade-in mb-12 relative">
+            <div className="inline-block relative">
+              {/* Decorative elements around title */}
+              <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-24 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
+              
               <h1 className="text-6xl md:text-8xl font-light tracking-wider mb-2">
                 THE
               </h1>
-              <h1 className="text-6xl md:text-8xl font-bold tracking-wider gold-shimmer">
+              <h1 className="text-6xl md:text-8xl font-bold tracking-wider gold-shimmer mb-6">
                 VILLAMENT
               </h1>
-              <div className="h-px bg-gradient-to-r from-transparent via-gold to-transparent mt-6" />
+              
+              {/* Enhanced divider with decorative elements */}
+              <div className="relative w-full max-w-md mx-auto">
+                <div className="h-px bg-gradient-to-r from-transparent via-gold to-transparent" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-gold rotate-45" />
+              </div>
+              
+              {/* Small decorative text */}
+              <p className="text-xs tracking-[0.3em] text-gray-400 mt-4">LUXURY LIVING</p>
             </div>
           </div>
 
-          {/* Tagline */}
-          <p className="text-xl md:text-2xl text-gray-700 font-light mb-12 animate-fade-in-delay-1 max-w-3xl mx-auto">
-            Where villa exclusivity meets apartment community
-          </p>
-
-          {/* Main Description */}
-          <div className="animate-fade-in-delay-2 mb-16 space-y-6 max-w-3xl mx-auto">
-            <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-              A suave abode in the heart of Dharwad city featuring unique homes 
-              that give you the exclusivity of villa life while building a community together.
+          {/* Tagline with enhanced styling */}
+          <div className="animate-fade-in-delay-1 mb-12 relative">
+            <p className="text-xl md:text-3xl text-gray-700 font-light max-w-3xl mx-auto leading-relaxed">
+              Where villa exclusivity meets apartment community
             </p>
+            {/* Decorative quote marks */}
+            <div className="absolute -left-4 top-0 text-4xl text-gold/20 font-serif">"</div>
+            <div className="absolute -right-4 bottom-0 text-4xl text-gold/20 font-serif">"</div>
           </div>
 
-          {/* Features Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 animate-fade-in-delay-3">
-            <div className="p-6 bg-white border border-gray-100 hover:border-gold transition-all duration-300 hover:shadow-lg">
-              <div className="w-12 h-12 mx-auto mb-4 border border-gold flex items-center justify-center">
-                <svg className="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          {/* Main Description with border accent */}
+          <div className="animate-fade-in-delay-2 mb-20 space-y-6 max-w-3xl mx-auto relative">
+            <div className="relative px-8 py-8 border-l-2 border-gold/30">
+              <p className="text-base md:text-lg text-gray-600 leading-relaxed text-left">
+                A suave abode in the heart of Dharwad city featuring unique homes 
+                that give you the exclusivity of villa life while building a community together. 
+                Living spaces carefully crafted to open to nature while ensuring maximum privacy.
+              </p>
+            </div>
+          </div>
+
+          {/* Features Grid with enhanced cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20 animate-fade-in-delay-3">
+            <div className="group relative p-8 bg-white border border-gray-100 hover:border-gold transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+              {/* Corner decoration */}
+              <div className="absolute top-0 right-0 w-12 h-12 border-t border-r border-gold/0 group-hover:border-gold/30 transition-all duration-500" />
+              
+              <div className="w-16 h-16 mx-auto mb-6 border-2 border-gold flex items-center justify-center group-hover:bg-gold/5 transition-all duration-300">
+                <svg className="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Grand Luxury Homes</h3>
-              <p className="text-sm text-gray-600">Double height volumes with expansive windows</p>
+              <h3 className="text-xl font-semibold mb-3 group-hover:text-gold transition-colors duration-300">Grand Luxury Homes</h3>
+              <div className="w-12 h-px bg-gold/30 mx-auto mb-3" />
+              <p className="text-sm text-gray-600 leading-relaxed">Double height volumes with expansive full-length windows and large balconies</p>
             </div>
 
-            <div className="p-6 bg-white border border-gray-100 hover:border-gold transition-all duration-300 hover:shadow-lg">
-              <div className="w-12 h-12 mx-auto mb-4 border border-gold flex items-center justify-center">
-                <svg className="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="group relative p-8 bg-white border border-gray-100 hover:border-gold transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+              {/* Corner decoration */}
+              <div className="absolute top-0 right-0 w-12 h-12 border-t border-r border-gold/0 group-hover:border-gold/30 transition-all duration-500" />
+              
+              <div className="w-16 h-16 mx-auto mb-6 border-2 border-gold flex items-center justify-center group-hover:bg-gold/5 transition-all duration-300">
+                <svg className="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Prime Location</h3>
-              <p className="text-sm text-gray-600">100m off Pune-Bangalore highway in Dharwad</p>
+              <h3 className="text-xl font-semibold mb-3 group-hover:text-gold transition-colors duration-300">Prime Location</h3>
+              <div className="w-12 h-px bg-gold/30 mx-auto mb-3" />
+              <p className="text-sm text-gray-600 leading-relaxed">100m off Pune-Bangalore highway with schools, shopping & dining nearby</p>
             </div>
 
-            <div className="p-6 bg-white border border-gray-100 hover:border-gold transition-all duration-300 hover:shadow-lg">
-              <div className="w-12 h-12 mx-auto mb-4 border border-gold flex items-center justify-center">
-                <svg className="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="group relative p-8 bg-white border border-gray-100 hover:border-gold transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+              {/* Corner decoration */}
+              <div className="absolute top-0 right-0 w-12 h-12 border-t border-r border-gold/0 group-hover:border-gold/30 transition-all duration-500" />
+              
+              <div className="w-16 h-16 mx-auto mb-6 border-2 border-gold flex items-center justify-center group-hover:bg-gold/5 transition-all duration-300">
+                <svg className="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Exclusive Amenities</h3>
-              <p className="text-sm text-gray-600">Swimming pool, gym, spa & clubhouse</p>
+              <h3 className="text-xl font-semibold mb-3 group-hover:text-gold transition-colors duration-300">Exclusive Amenities</h3>
+              <div className="w-12 h-px bg-gold/30 mx-auto mb-3" />
+              <p className="text-sm text-gray-600 leading-relaxed">785 sq.ft pool, 500 sq.ft gym with spa, and spacious clubhouse</p>
             </div>
           </div>
 
-          {/* Coming Soon Badge */}
-          <div className="animate-fade-in-delay-3">
-            <div className="inline-block px-8 py-3 border-2 border-gold text-gold font-semibold tracking-wider">
-              COMING SOON
+          {/* Coming Soon Badge with enhanced design */}
+          <div className="animate-fade-in-delay-3 relative">
+            <div className="relative inline-block">
+              {/* Decorative frame */}
+              <div className="absolute -inset-4 border border-gold/10" />
+              
+              <div className="relative bg-white px-12 py-6 border-2 border-gold text-gold font-semibold tracking-[0.2em] text-lg hover:bg-gold hover:text-white transition-all duration-300 cursor-default">
+                COMING SOON
+              </div>
             </div>
-            <p className="mt-6 text-sm text-gray-500">
-              Only 10 exclusive units
-            </p>
+            
+            <div className="mt-8 flex items-center justify-center gap-4">
+              <div className="w-16 h-px bg-gold/30" />
+              <p className="text-sm text-gray-500 tracking-wider">
+                ONLY <span className="text-gold font-semibold">10</span> EXCLUSIVE UNITS
+              </p>
+              <div className="w-16 h-px bg-gold/30" />
+            </div>
+            
+            {/* Location tag */}
+            <div className="mt-6 inline-flex items-center gap-2 text-xs text-gray-400 tracking-wider">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              DHARWAD, KARNATAKA
+            </div>
           </div>
         </div>
       </section>
